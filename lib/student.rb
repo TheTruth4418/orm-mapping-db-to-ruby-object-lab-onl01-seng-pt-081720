@@ -78,7 +78,7 @@ class Student
       LIMIT 1
     SQL
 
-    DB[:conn].execute(sql)
+    DB[:conn].execute(sql).self.new_from_db
 
   end
 
